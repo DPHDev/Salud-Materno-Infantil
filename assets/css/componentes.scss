@@ -1,0 +1,151 @@
+.componentes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 80px;
+    margin: 0 auto;
+
+    &_title {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    &_subtitle {
+        font-family: "Raleway";;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size:18px;
+        line-height:24px;
+        letter-spacing:0.04em;
+        color: getColor("subtitles");
+    }
+
+    &_descripcion {
+        background-color: getColor('main');
+        padding: 100px 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &-info {
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+            text-align: justify;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height */
+            letter-spacing: 0.04em;
+        }
+    }
+    
+    &_objetivos {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        margin: 0 auto;
+    }
+
+    &_ol {
+        width: 80%;
+        text-align: justify;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+
+    &_ul {
+        width: 80%;
+        list-style:circle;
+        margin: 0 auto;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+
+}
+
+.bienestarSubjetivo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 10%;
+    align-items: center;
+    text-align: center;
+
+    &_info {
+        padding: 50px 0;
+        text-align: justify;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+
+    &_img {
+        width: 70%;
+    }
+}
+
+.dinColectiva {
+    background-color: getColor('main');
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    gap: 50px;
+
+    &_group {
+        padding: 0 10%;
+    }
+
+    &_subtitle {
+        font-family: "Raleway";;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size:18px;
+        line-height:24px;
+        letter-spacing:0.04em;
+        color: getColor("subtitles");
+    }  
+
+    &_info {
+        padding: 30px 0;
+        text-align: justify;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+
+    &_afectos {
+        background-color: getColor('white');
+        width: 100%;
+        padding: 30px 10%;
+        text-align: center;
+    }
+
+    &_tbl {
+        margin: 0 auto;
+    }
+
+    &_img {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+

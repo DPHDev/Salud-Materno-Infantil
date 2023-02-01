@@ -1,0 +1,53 @@
+.enfoques {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    &_list {
+        list-style: decimal;
+        color: getColor('titles');
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    &_tbl {
+        color: getColor('black');
+        font-weight: 400;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+
+        & th {
+            &:nth-child(2) {
+                width: 40%;
+            }
+        }
+
+        & > thead {
+            text-align: center;
+        }
+    }
+
+    &tr, td {
+        border: 1px solid getColor('black');
+    }
+
+    &td, tr:hover {
+        background-color: getColor('white');
+    }
+
+    &_text {
+        color: getColor('black');
+        font-weight: 400;
+        text-align: justify;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+}

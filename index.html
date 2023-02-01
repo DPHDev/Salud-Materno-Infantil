@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+  <title>Diagnóstico</title>
+  <link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Titan+One&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+<!-- Ventana modal -->
+<div class="backdrop is-hidden" id="data-modal">
+  <div class="modal">
+    <button id="data-modal-close" class="modal-close">
+      <svg class="icon-close-modal">
+        <use href="./assets/img/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+
+    <div>
+      <h4 class="modal_title">Actores intersectoriales</h4>
+      <ul class="modal_info">
+        <li>Comité Central de Mujeres de UNORCAC.</li><br>
+        <li>Consejo de Salud Ancestral  Hampik Warmikuna, Cotacachi.</li><br>
+        <li>Dirección Distrital de Salud 10D03, Cotacachi.</li><br>
+        <li>Escuela de partería “Unanchu Mamakuna”.</li><br>
+        <li>Técnicos de Atención Primaria en Salud (TAPS), Cotacachi. </li><br>
+        <li>Técnicas del Ministerio de Inclusión Económica y Social (MIES), territorio de Cotacachi.</li><br>
+        <li>Técnicas del Ministerio de Educación (MINEDUC)-Coordinación DECE, Cotacachi. </li><br>
+        <li>Secretaria ejecutiva CCPD, y Junta Cantonal de Protección de Derechos JCPD, Cotacachi. </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html"><span class="header_logo">MJBenitez</span></a>
+    <nav class="navbar">
+      <ul class="navbar_list">
+        <li class="navbar_item"><a class="navbar_page current" href="index.html">Home</a></li>
+        <li class="navbar_item"><a class="navbar_page" href="#glosario">Glosario</a></li>
+        <li class="navbar_item"><a class="navbar_page" href="enfoques.html">Enfoques</a></li>
+        <li class="navbar_item"><a class="navbar_page" href="delphis.html">Sistematización Delphis</a></li>
+        <li class="navbar_item"><a class="navbar_page" href="cabildos.html">Interacción Cabildos</a></li>
+        <li class="navbar_item"><a class="navbar_page" href="componentes.html">Componentes de bienestar</a></li>
+        <li class="navbar_item"><a class="navbar_page" href="galeria.html">Galería</a></li>
+        <li class="navbar_item"><a class="navbar_page" href="">Relatos Parteras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Contenido de la página -->
+<div class="content">
+  <section class="banner-ppal">
+    <h1 class="text-ppal">DIAGNÓSTICO SOBRE LA SALUD MATERNA-INFANTIL Y LA POBREZA MULTIDIMENSIONAL</h1>
+    <a href="./files/INFORME FINAL. DIAGNÓSTICO SOBRE LA SALUD MATERNA-INFANTIL Y LA POBREZA MULTIDIMENSIONAL.docx" download><button type="button" class="btn-ppal">
+      Descargar informe
+    </button></a>
+  </section>
+
+  <div class="proposito">
+    <img src="./assets/img/partera1.jpg" alt="" class="proposito_img">
+    <h3 class="section-tittle">Proyecto para mejorar la salud materna -infantil en las comunidades indígenas de Cotacachi, Ecuador 2022-2023.</h3>
+  </div>
+    <!-- actores -->
+  <h3 class="section-tittle">Actores determinantes</h3>
+  <section class="actores">
+    <div class="actores_item">
+      <div class="act-card">
+        <img class="act-icon" src="./assets/img/png/pregnant1.png" alt="">
+      </div>
+      <h3 class="actores_tittle">Mujeres gestantes y niños(as) menores de 5 años</h3>
+      <p class="actores_description">
+        Fueron partícipes 298 mujeres, entre mujeres gestantes y madres de niños y niñas menores de 5 años 
+      </p>
+    </div>
+    <div class="actores_item">
+      <div class="act-card">
+        <img class="act-icon" src="./assets/img/png/pregnant4.png" alt="">
+      </div>
+      <h3 class="actores_tittle">Mesas intersectoriales</h3>
+      <p class="actores_description">
+        Dieron una valoración y una opinión de las necesidades.
+      </p>
+      <button type="button" class="btn-modal-open" id="data-modal-open">Actores intersectoriales</button>
+    </div>
+    <div class="actores_item">
+      <div class="act-card">
+        <img class="act-icon" src="./assets/img/png/help.png" alt="">
+      </div>
+      <h3 class="actores_tittle">Cabildos</h3>
+      <p class="actores_description">
+        Las y los dirigentes comunitarios expresaron la percepción de la realidad de su comunidad.
+      </p>
+    </div>
+    <div class="actores_item">
+      <div class="act-card">
+        <img class="act-icon" src="./assets/img/png/born.png" alt="">
+      </div>
+      <h3 class="actores_tittle">Mamas parteras</h3>
+      <p class="actores_description">
+        24 Parteras contaron sus experiencias y dieron su testimonio.
+      </p>
+    </div>
+  </section>
+
+  <section class="metodos bg-pink">
+  <h3 class="section-tittle metodos_title">Método de recolección de información</h3>
+  <div class="metodos_galery">
+    <div class="metodos_card">
+      <img class="metodos_img" src="./assets/img/taller1.jpg" alt="persona desarrollando código basado en diagrama de flujo"
+        width="370 px" />
+      <p class="metodos_subtitle">Socialización Delphi</p>
+    </div>
+    <div class="metodos_card">
+      <img class="metodos_img" src="./assets/img/taller7.jpg" alt="persona viendo diseño mobile" width="370 px" />
+      <p class="metodos_subtitle">Observaciones del Análisis Crítico del Discurso (ACD) desde Árbol de problemas</p>
+    </div>
+    <div class="metodos_card">
+      <img class="metodos_img" src="./assets/img/afectosindex.jpg" alt="persona seleccionando paleta de colores" width="370 px" />
+      <p class="metodos_subtitle">Construcción de nubes de palabras</p>
+    </div>
+    <div class="metodos_card">
+      <img class="metodos_img" src="./assets/img/taller3.jpg" alt="persona desarrollando código basado en diagrama de flujo"
+        width="370 px" />
+      <p class="metodos_subtitle">Visitas a las 16 comunidades</p>
+    </div>
+    <div class="metodos_card">
+      <img class="metodos_img" src="./assets/img/taller4.jpg" alt="persona seleccionando paleta de colores" width="370 px" />
+      <p class="metodos_subtitle">Diálogo cualitativo, interdisciplinario, y participativo en la obtención de datos a través de la observación</p>
+    </div>
+    <div class="metodos_card">
+      <img class="metodos_img" src="./assets/img/taller9.jpg" alt="persona desarrollando código basado en diagrama de flujo"
+        width="370 px" />
+      <p class="metodos_subtitle">Entrevistas semiestructuradas</p>
+    </div>
+    <div class="metodos_card">
+      <img class="metodos_img" src="./assets/img/cartel13.jpg" alt="persona viendo diseño mobile" width="370 px" />
+      <p class="metodos_subtitle">Dinámicas colectivas, desde relatos sensitivos comunitarios</p>
+    </div>
+    <div class="metodos_card">
+      <img class="metodos_img" src="./assets/img/taller5.jpg" alt="persona seleccionando paleta de colores" width="370 px" />
+      <p class="metodos_subtitle">Encuestas</p>
+    </div>
+  </div>    
+  </section>
+
+  <section class="glosario" id="glosario">
+    <h3 class="section-tittle">Glosario de términos</h3>
+    <dl class="glosario_list">
+      <dt>Decolonialidad</dt>
+      <dd>Es un concepto que se refiere al proceso de deshacer y superar los efectos del colonialismo en la sociedad. En el contexto de la salud, la decolonialidad significa cuestionar y desafiar la hegemonía de la medicina occidental y sus prácticas coloniales en la atención médica. Esto incluye reconocer y valorar las prácticas médicas y las formas de conocimiento que han sido desarrolladas y transmitidas por las comunidades indígenas y otros grupos étnicos, y garantizar que sus derechos y necesidades sean respetados y satisfechos en la atención médica. La decolonialidad en la salud también implica el reconocimiento de la interconexión entre la salud y los sistemas políticos, económicos y socioculturales, y la necesidad de abordar las desigualdades y la discriminación y racismo sistémico en la atención médica. Se trata de un enfoque interdisciplinario que busca promover la justicia y la equidad en la atención médica y en la salud en general. Este conlleva un proceso de deconstrucción de las prácticas médicas y de construcción de nuevas formas de atención médica que sean inclusivas, equitativas y justas para todas las comunidades.</dd>
+      <br>
+      <dt>Enfoque biopsicosocial</dt>
+      <dd>Es una perspectiva interdisciplinaria que aborda la salud y la enfermedad como resultado de la interacción entre factores biológicos, psicológicos-emocionales, y sociales. Este enfoque sostiene que ningún factor puede ser comprendido o abordado de manera aislada y que la salud es el resultado de un equilibrio dinámico entre estos factores. Este enfoque se utiliza a menudo en la práctica médica y en la investigación de la salud para abordar problemas de salud complejos.</dd>
+  <br>
+      <dt>Epistemología crítica</dt>
+      <dd>Es una corriente filosófica, que se enfoca en el estudio crítico y reflexivo de la naturaleza, los límites y las fuentes del conocimiento. Esta perspectiva cuestiona la objetividad y la neutralidad de la producción y difusión del conocimiento, y argumenta que el conocimiento está influenciado y condicionado por factores políticos, económicos, sociales y culturales. La epistemología crítica busca identificar y desafiar las desigualdades y opresiones que se encuentran en el sistema de producción y difusión del conocimiento.</dd>
+<br>
+      <dt>Método Delphi</dt>
+      <dd>Es un método de pronóstico y exploración, que focaliza desde opiniones directas de expertos y de forma anónima, desde un acercamiento al problema y su multiplicidad de factores, ponderando la misma pregunta a los y las expertos, para la lectura posterior de los patrones a repetirse, mismos que configurarán una respuesta conjunta frente al problema.  En este caso, su operacionalización previa al desarrollo metodológico e investigación en campo permite obtener opiniones, y puntos de vista elementales, que delimitan y permiten un enfoque concentrado y preciso, cuando se trata de temática muy amplias, como es este caso de estudio. </dd>
+  <br>
+      <dt>Transculturalidad</dt>
+      <dd>Aborda la relación entre diferentes sistemas-culturas y cómo estas se influencian mutuamente en un contexto global. La transculturalidad, como parte de los determinantes culturales de la salud, conocer al ser humano en su diario vivir, lo que piensa, cree, cómo se cuida, las creencias culturales, las conductas del cuidado y los valores de los individuos para mejorar la atención en salud, las disparidades e inequidades de la atención de la salud, originadas por las desigualdades culturales, en materia de acceso los servicios de la salud, y a su vez la prestación de asistencia sanitaria de calidad.</dd>
+  <br>
+      <dt>Integralidad</dt>
+      <dd>Se refiere a la capacidad integral en la gestión del territorio, recursos y servicios, incluyendo la conservación de recursos naturales y la protección del medio ambiente, donde la organización debe ser coherente con sus políticas, prácticas y objetivos en materia de desarrollo territorial, y debe actuar de manera responsable y ética en la gestión de estos.</dd>
+<br>
+      <dt>Territorialidad vital</dt>
+      <dd>Desde la interculturalidad se refiere a la forma en que una cultura define su relación con el territorio y cómo este territorio es esencial para su supervivencia y desarrollo. Esto incluye la percepción y uso del territorio, los valores culturales y las tradiciones que están asociados con él, y cómo la cultura construye y mantiene su identidad en relación con este, de acuerdo necesidad específicas.  Se reconoce que el territorio es fundamental para la vida y la continuidad de una cultura, y que la gestión y conservación de este territorio es esencial para la sostenibilidad y la preservación de la cultura a largo plazo.</dd>
+  <br>
+      <dt>Multi-streams approach</dt>
+      <dd>O estudio de caso múltiple hacia la valoración de las necesidades, y la revisión de las probables ventanas de oportunidades que pueden abrirse o cerrarse de acuerdo con la observación y la Programación multisectorial-multinivel en interacción de los y las actoras que intervienen en el sistema. <br>
+        Es una metodología utilizada para analizar y abordar problemas complejos y multifacéticos, como en este caso de estudio: la salud materno-infantil en las comunidades rurales-indígenas, del Cantón Cotacachi; centrando este análisis  en las diferentes “corrientes” o “factores determinantes” que confluyen en el problema, desde una correlación entre el enfoque y factores biopsicosociales, desde una interpretación a los componentes políticos, económicos, socioculturales y ambientales que intervienen en el ecosistema de estudio, y a su vez en relación con la pobreza multidimensional. 
+        </dd>
+  <br>
+      <dt>Transversalización</dt>
+      <dd>Es un enfoque que busca asegurar la integración de una perspectiva o un tema en diferentes áreas y niveles de un sistema o proceso, y promover un enfoque integral y equilibrado. La salud es un concepto complejo y multidisciplinario que está influenciado por una amplia gama de factores, incluyendo la economía, la educación, la cultura, medio ambiente y estilo-modos de vida. Por lo tanto, es necesario adoptar un enfoque integrado y transversal para abordar los desafíos y mejorar la salud de las personas y las comunidades.</dd>  
+<br>
+      <dt>Capabilidad</dt>
+      <dd>Se refiere a una perspectiva que se enfoca en el desarrollo de habilidades y recursos individuales y colectivos para alcanzar objetivos y solucionar problemas. Este enfoque se centra en la identificación y fortalecimiento de las capacidades existentes, en lugar de simplemente abordar las debilidades o las carencias.</dd>
+<br>
+      <dt>Bienestar subjetivo</dt>
+      <dd>Se refiere a la percepción individual de la calidad de vida y la satisfacción con la vida. Es un concepto subjetivo que varía de una persona a otra y depende de factores individuales y contextuales. El bienestar subjetivo incluye aspectos como la satisfacción con la vida en general, la satisfacción con diferentes aspectos de la vida, como la salud, las relaciones interpersonales, el trabajo y la economía, la cultura, y las emociones o afectos positivos y negativos. También puede incluir la percepción de control y de realización personal, la autoestima y la autoconfianza. El bienestar subjetivo es un concepto clave en la investigación y la práctica en el campo de la psicología y la salud, y se utiliza como un indicador de la calidad de vida y la salud mental de las personas. También es un factor importante en la evaluación del impacto de políticas públicas y programas sociales en la vida de las personas. Es un concepto complejo que se enfoca en la percepción individual de la calidad de vida y la satisfacción con la vida. Es un aspecto importante de la investigación y la práctica en la psicología y la salud, y se utiliza como un indicador de la salud y el bienestar de las personas.</dd>
+  <br>
+      <dt>Intraculturalidad</dt>
+      <dd>Se refiere a las diversas formas en que las personas dentro de una misma cultura u sistema interactúan y se relacionan entre sí. Esto incluye las diferencias en valores, creencias, tradiciones, idiomas, etnia, género y otras características que existen dentro del mismo. La intraculturalidad es un concepto importante en la comprensión de la diversidad que puede abarcar un mismo sistema, y cómo estas diferencias influyen en las relaciones interpersonales, y en la toma de decisiones. Al fomentar la comprensión y el respeto por la intraculturalidad, se puede mejorar la convivencia y la cohesión dentro de una cultura. En este caso, se entiende como el ejercicio de recuperación, fortalecimiento, revitalización, reparación de los canales de transmisión de saberes en condición a la Salud de los pueblos y comunidades, misma que intenta ser reivindicada hacia y desde adentro, desde sus bases (desde el sistema de la salud tradicional, a través de las y los sabedores de la misma). </dd>
+  <br>
+      <dt>Interculturalidad</dt>
+      <dd>En la salud se refiere a la forma en que la diversidad cultural influye en la percepción, la comprensión y la atención de la salud. La interculturalidad en la salud busca promover la equidad y la inclusión en la atención médica y en la promoción, accesibilidad a los servicios de la salud, así como asegurar que se tenga en cuenta la diversidad cultural de las y los pacientes y la comunidad en general.</dd>
+  </dl>
+  </section>
+</div>
+
+<footer>
+  <div class="footer">
+    <div class="footer_info">
+      <span class="footer_logo">MJBenitez</span>
+      <address class="footer_addres">
+        <p>Coacachi, Ecuador</p>        
+        <a class="footer_contact" href="mailto: majobehi@hotmail.com"><p>majobehi@hotmail.com</p></a>
+        <a class="footer_contact" href="tel: +593 96 176 2364"><p>+593 96 176 2364</p></a>
+      </address>
+    </div>
+    <div class="footer-social">
+      <span class="footer-title">ENCUENTRAME EN</span>
+      <ul class="footer-social-list">
+        <li>
+          <a href="">
+            <div class="footer-social-item">
+              <svg class="footer-icon">
+                <use href="./assets/img/icons.svg#icon-instagram"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <div class="footer-social-item">
+              <svg class="footer-icon">
+                <use href="./assets/img/icons.svg#icon-twitter"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="footer-social-item">
+              <svg class="footer-icon">
+                <use href="./assets/img/icons.svg#icon-facebook"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="footer-social-item">
+              <svg class="footer-icon">
+                <use href="./assets/img/icons.svg#icon-linkedin2"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="./js/script0.js"></script>
+</body>
+</html>

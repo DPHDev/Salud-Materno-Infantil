@@ -1,0 +1,20 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+    gap: 50px;
+    justify-content: space-between;
+
+    &_img {
+        width: 30%;
+        object-fit: cover;
+        border-radius: 15px;
+
+        &:hover {
+            transform: scale(1.1) ;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+    }
+}

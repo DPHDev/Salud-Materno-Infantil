@@ -1,0 +1,246 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+* {
+    font-family: 'Titan One', cursive;
+    font-family: 'DM Sans', sans-serif;
+    font-family: "Roboto", "Raleway", sans-serif;
+    text-decoration: none;
+}
+
+@import 'colors';
+@import 'header';
+@import 'delphis';
+@import 'cabildos';
+@import 'componentes';
+@import 'index';
+@import 'enfoques';
+@import 'galeria';
+
+.content {
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.tittle {
+    font-family: "Raleway";;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-tittle {
+    @extend .tittle;
+    text-align: center;
+    font-size:58px;
+    line-height:66px;
+    letter-spacing:0.06em;
+    color: getColor("titles");
+}
+
+.section-tittle{
+    @extend .tittle;
+    text-align: center;
+    font-size:38px;
+    line-height:46px;
+    letter-spacing:0.06em;
+    color: getColor("titles");
+}
+
+.section-subtitle {
+    @extend .tittle;
+    font-size:28px;
+    line-height:34px;
+    letter-spacing:0.04em;
+    color: getColor("subtitles");
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    &_group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    &_grafica {
+        width: 100%;
+        background-color: getColor('white');
+        border-radius: 25px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &_text {
+        text-align: justify;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+}
+
+table {
+    text-align: center;
+    background-color: getColor('white');
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: getColor('titles');
+    color: getColor('white');
+}
+
+tr {
+    &:hover {
+        background-color: getColor('main');
+    }
+}
+
+.derechos {
+    color: getColor('derechos');   
+    font-weight: bold; 
+}
+
+.violencia {
+    color: getColor('violencia');
+        font-weight: bold; 
+}
+
+.tidii {
+    color: getColor('tidii');
+        font-weight: bold; 
+}
+
+
+// Sección footer
+
+.footer {
+    width: 100%;
+    background-color: getColor('main');
+    padding: 50px 50px;
+    display: flex;
+    gap: 70px;
+    margin: 0 auto;
+    
+    &_info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    &_logo {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      /* identical to box height */
+      letter-spacing: 0.03em;
+      color:getColor('titles');
+    }
+    
+    &_address {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */
+      letter-spacing: 0.03em;
+      color: getColor('white');
+    }
+  
+    &_contact {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */ 
+      letter-spacing: 0.03em;
+      color: getColor('grey');
+    }
+  }
+  
+  
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor ('black');
+  }
+  
+  .footer-social-list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .footer-social-item {
+    background-color: getColor('titles');
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .footer-social-item:hover {
+    background-color: getColor('white');
+    border: 2px solid getColor('titles');
+  }
+  
+  .footer-icon {
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+  
+    &:hover {
+      fill: getColor('titles');
+    }
+  }

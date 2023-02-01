@@ -1,0 +1,56 @@
+.bg-pink {
+    background-color: getColor('main');
+}
+
+.expertos {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    &_subtitle {
+        font-family: "Raleway";;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size:28px;
+        line-height:34px;
+        letter-spacing:0.04em;
+        color: getColor("subtitles");
+    }
+
+    &_text {
+        text-align: justify;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+}
+
+.delphis {
+    width: 80%;
+    display: flex;
+    padding: 100px 50px;
+    gap: 10%;
+    margin: 0 auto;
+
+    &_title {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_info {
+        width: 60%;
+        align-items: center;
+    }
+    &_text {
+        text-align: justify;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+}
+

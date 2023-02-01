@@ -1,0 +1,19 @@
+$colors: (
+  "main":#fbe8ed,
+  "subtitles":#ae455e,
+  "titles":#D41443,
+  "white":#FFFFFF,
+  "black":#000000,
+  "grey": #757575,
+  'bg1':#E5E5E5,
+  "n1":#21A4EA,
+  "n2":#F35EDC,
+  "int":#69EF74,
+  "derechos": #EA6864,
+  "violencia": #A86FEA,
+  "tidii": #7BCBDB
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
