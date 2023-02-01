@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.12);
-  padding: 0 100px;
+  padding: 0 50px;
   z-index: 999;
 }
 .header_logo {
@@ -32,7 +32,6 @@
 
 .navbar {
   display: flex;
-  gap: 100px;
 }
 .navbar_list {
   display: flex;
@@ -64,6 +63,14 @@
   border-radius: 2px;
 }
 
+@media screen and (max-width: 1300px) {
+  .header {
+    padding: 0 20px;
+  }
+  .navbar_list {
+    gap: 25px;
+  }
+}
 .bg-pink {
   background-color: #fbe8ed;
 }
