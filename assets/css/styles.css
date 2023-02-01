@@ -616,6 +616,8 @@
   overflow: hidden;
 }
 .metodos_img {
+  width: 350px;
+  height: 300px;
   object-fit: cover;
 }
 .metodos_subtitle {

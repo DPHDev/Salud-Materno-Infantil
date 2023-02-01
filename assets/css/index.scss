@@ -255,7 +255,9 @@
   }
 
   &_img {
-    object-fit:cover;
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
   }
 
   &_subtitle {
