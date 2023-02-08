@@ -2,11 +2,13 @@
 const $grafica5 = document.querySelector("#grafica5");
 const $grafica6 = document.querySelector("#grafica6");
 const $grafica7 = document.querySelector("#grafica7");
+const $grafica8 = document.querySelector("#grafica8");
 
 // Las etiquetas son las que van en el eje X. 
 const etiquetas2 = ["Bienestar emocional-espiritual", "Falta de Recursos", "Sensibilización - Capacitación", "Estructura - Organización", "Discriminación - Desvalorización", "Violencia obstétrica", "Transferencia de conocimientos- Formación", "Acompañamiento", "Malas prácticas", "Comunicación empática", "Interculturalidad(Cosmovisión)", "Integralidad","Apoyo estatal", "Pertenencia comunitaria", "Liderar el parto"]
 const ventajas = ["Acompañamiento en parto y puerperio", "Seguridad y confianza", "Recursos y facilidad de asistir en zonas rurales", "Comodidad", "Acompañamiento familiar", "Salud mental y espiritual", "Herbolaria y medicina natural"]
 const desventajas = ["Poca coordinación con el ministerio de salud", "Falta de complementariedad", "Falta de equipamiento", "Difícil acceso a respuesta ante complicaciones", "Formación y capacitación contínua", "Transferencia de conocimientos", "Factores de riesgo postnatales"]
+const principios = ["Interculturalidad", "Integralidad", "Intraculturalidad", "Participación social",  "Calidad en salud", "Unidad de gestión", "Revalorización cultural", "Armonía","Reciprocidad"]
 
 // // Podemos tener varios conjuntos de datos
 const ancestral = {
@@ -39,6 +41,23 @@ const desventajasdata = {
     data: [3,2,6,2,2,2,1], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
     backgroundColor: 'rgba(227, 36, 245, 0.3)', // Color de fondo
     borderColor: 'rgba(227, 36, 245, 1)', // Color del borde
+    borderWidth: 1,// Ancho del borde
+};
+
+// // Podemos tener varios conjuntos de datos
+const ancestral8 = {
+    label: "Medicina Ancestral",
+    data: [6,6,5,0,3,2,7,8,9], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    backgroundColor: 'rgba(222, 67, 199, 0.3)',// Color de fondo
+    borderColor: 'rgba(222, 67, 199, 1)',// Color del borde
+    borderWidth: 1,// Ancho del borde
+};
+
+const occidental8 = {
+    label: "Medicina Occidental",
+    data: [0,2,0,3,3,4,0,0,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    backgroundColor: 'rgba(139, 67, 222, 0.3)', // Color de fondo
+    borderColor: 'rgba(139, 67, 222, 1)', // Color del borde
     borderWidth: 1,// Ancho del borde
 };
 
@@ -101,7 +120,7 @@ new Chart($grafica6, {
         scales:{
             yAxes: [{
                 ticks:{
-                    fontSize: 16
+                    fontSize: 15
                 }
             }],
             xAxes: [{
@@ -146,7 +165,7 @@ new Chart($grafica7, {
         scales:{
             yAxes: [{
                 ticks:{
-                    fontSize: 16
+                    fontSize: 15
                 }
             }],
             xAxes: [{
@@ -162,4 +181,37 @@ new Chart($grafica7, {
                 fontColor: 'Black'
             }}
     }      
+});
+
+new Chart($grafica8, {
+    type: 'radar',// Tipo de gráfica
+    data: {
+        labels: principios,
+        datasets: [
+            ancestral8,
+            occidental8
+            // Aquí más datos...
+        ]
+    },
+    options: {
+        scale: {
+            pointLabels:{
+                fontSize: 18,
+                fontColor: 'black'
+            },
+            ticks: {
+                beginAtZero: true,
+                min: 0,
+                max: 10,
+            }
+        },
+        margin: 0,
+        legend: {
+            labels:{
+                fontColor: 'Black',
+                fontSize: 25
+            },
+            
+        }     
+    }       
 });
