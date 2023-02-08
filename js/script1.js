@@ -120,7 +120,7 @@ new Chart($grafica6, {
         scales:{
             yAxes: [{
                 ticks:{
-                    fontSize: 15
+                    fontSize: 15  
                 }
             }],
             xAxes: [{
