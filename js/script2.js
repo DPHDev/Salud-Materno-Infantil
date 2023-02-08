@@ -1,16 +1,43 @@
 // Obtener una referencia al elemento canvas del DOM
+const $grafica0 = document.querySelector("#grafica0");
 const $grafica1 = document.querySelector("#grafica1");
 const $grafica2 = document.querySelector("#grafica2");
 const $grafica3 = document.querySelector("#grafica3");
 const $grafica4 = document.querySelector("#grafica4");
 
 // Las etiquetas son las que van en el eje X. 
-const etiquetas = ["Anrabi", "Iltaqui", "Morales Chupa", "San Antonio del Punge", "Cumbas Conde", "San Pedro", "Topo Grande", "Peribuela", "El Cercado", "San Nicolás", "La Calera","Ambi Grande","Perafán","El Morlan", "Guitarra Ucu","Chilca Pamba"]
+const comunidades = ["Anrabi", "Iltaqui", "Morales Chupa", "San Antonio del Punge", "Cumbas Conde", "San Pedro", "Topo Grande", "Peribuela", "El Cercado", "San Nicolás", "La Calera","Ambi Grande","Perafán","El Morlan", "Guitarra Ucu","Chilca Pamba"]
+const categorias = ["Genero", "Drechos y Salud", "IDIIT"]
+
+// // Podemos tener varios conjuntos de datos
+const generoTot = {
+    label: "Género",
+    data: [15], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
+    backgroundColor: 'rgba(254, 106, 0, 0.3)', // Color de fondo
+    borderColor: 'rgba(254, 106, 0, 1)', // Color del borde
+    borderWidth: 1,// Ancho del borde
+};
+
+const saludTot = {
+    label: "Derechos y Salud",
+    data: [41], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
+    backgroundColor: 'rgba(238, 231, 33, 0.3)',// Color de fondo
+    borderColor: 'rgba(238, 231, 33, 1)',// Color del borde
+    borderWidth: 1,// Ancho del borde
+};
+
+const idiitTot = {
+    label: "IDIIT",
+    data: [34], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
+    backgroundColor: 'rgba(118, 5, 170, 0.3)',// Color de fondo
+    borderColor: 'rgba(118, 5, 170, 1)',// Color del borde
+    borderWidth: 1,// Ancho del borde
+};
 
 // // Podemos tener varios conjuntos de datos
 const genero = {
     label: "Género",
-    data: [1,0,0,0,0,4,0,0,2,0,2,2,1,2,1,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [1,0,0,0,0,4,0,0,2,0,2,2,1,2,1,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(254, 106, 0, 0.3)', // Color de fondo
     borderColor: 'rgba(254, 106, 0, 1)', // Color del borde
     borderWidth: 1,// Ancho del borde
@@ -18,14 +45,14 @@ const genero = {
 
 const generon1 = {
     label: "Nivel 1",
-    data: [0,0,0,0,0,2,0,0,0,0,2,2,0,0,1,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [0,0,0,0,0,2,0,0,0,0,2,2,0,0,1,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(33, 164, 234, 0.3)', // Color de fondo
     borderColor: 'rgba(33, 164, 234, 1)', // Color del borde
     borderWidth: 1,// Ancho del borde
 };
 const generon2 = {
     label: "Nivel 2",
-    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(243, 95, 220, 0.3)', // Color de fondo
     borderColor: 'rgba(243, 95, 220, 1)', // Color del borde
     borderWidth: 1,// Ancho del borde
@@ -33,7 +60,7 @@ const generon2 = {
 
 const generoint = {
     label: "Intenciones",
-    data: [1,0,0,0,0,2,0,0,2,0,0,0,1,2,0,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [1,0,0,0,0,2,0,0,2,0,0,0,1,2,0,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(105, 239, 116, 0.3)',// Color de fondo
     borderColor: 'rgba(105, 239, 116, 1)',// Color del borde
     borderWidth: 1,// Ancho del borde
@@ -42,7 +69,7 @@ const generoint = {
 // // Podemos tener varios conjuntos de datos
 const derechos = {
     label: "Derechos y Salud",
-    data: [2,2,0,3,1,5,0,0,5,5,2,3,4,3,2,4], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [2,2,0,3,1,5,0,0,5,5,2,3,4,3,2,4], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(238, 231, 33, 0.3)',// Color de fondo
     borderColor: 'rgba(238, 231, 33, 1)',// Color del borde
     borderWidth: 1,// Ancho del borde
@@ -50,21 +77,21 @@ const derechos = {
 
 const saludn1 = {
     label: "Nivel 1",
-    data: [2,2,0,2,1,4,0,0,2,1,1,3,4,3,0,3], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [2,2,0,2,1,4,0,0,2,1,1,3,4,3,0,3], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(33, 164, 234, 0.3)', // Color de fondo
     borderColor: 'rgba(33, 164, 234, 1)', // Color del borde
     borderWidth: 1,// Ancho del borde
 };
 const saludn2 = {
     label: "Nivel 2",
-    data: [0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(243, 95, 220, 0.3)', // Color de fondo
     borderColor: 'rgba(243, 95, 220, 1)', // Color del borde
     borderWidth: 1,// Ancho del borde
 };
 const saludint = {
     label: "Intenciones",
-    data: [0,0,0,1,0,1,0,0,3,3,0,0,0,0,2,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [0,0,0,1,0,1,0,0,3,3,0,0,0,0,2,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(105, 239, 116, 0.3)',// Color de fondo
     borderColor: 'rgba(105, 239, 116, 1)',// Color del borde
     borderWidth: 1,// Ancho del borde
@@ -73,7 +100,7 @@ const saludint = {
 // // Podemos tener varios conjuntos de datos
 const idiit = {
     label: "IDIIT",
-    data: [3,4,3,2,2,1,3,3,3,3,2,2,0,0,0,3], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [3,4,3,2,2,1,3,3,3,3,2,2,0,0,0,3], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(118, 5, 170, 0.3)',// Color de fondo
     borderColor: 'rgba(118, 5, 170, 1)',// Color del borde
     borderWidth: 1,// Ancho del borde
@@ -81,7 +108,7 @@ const idiit = {
 
 const idiitn1 = {
     label: "Nivel 1",
-    data: [1,0,0,0,0,1,1,1,3,3,2,2,0,0,0,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [1,0,0,0,0,1,1,1,3,3,2,2,0,0,0,0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(33, 164, 234, 0.3)', // Color de fondo
     borderColor: 'rgba(33, 164, 234, 1)', // Color del borde
     borderWidth: 1,// Ancho del borde
@@ -89,7 +116,7 @@ const idiitn1 = {
 
 const idiitn2 = {
     label: "Nivel 2",
-    data: [2,1,1,2,0,0,1,1,0,0,0,0,0,0,0,1], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [2,1,1,2,0,0,1,1,0,0,0,0,0,0,0,1], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(243, 95, 220, 0.3)', // Color de fondo
     borderColor: 'rgba(243, 95, 220, 1)', // Color del borde
     borderWidth: 1,// Ancho del borde
@@ -97,7 +124,7 @@ const idiitn2 = {
 
 const idiitint = {
     label: "Intenciones",
-    data: [0,3,2,0,2,0,1,1,0,0,0,0,0,0,0,2], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: [0,3,2,0,2,0,1,1,0,0,0,0,0,0,0,2], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de comunidades
     backgroundColor: 'rgba(105, 239, 116, 0.3)',// Color de fondo
     borderColor: 'rgba(105, 239, 116, 1)',// Color del borde
     borderWidth: 1,// Ancho del borde
@@ -106,10 +133,45 @@ const idiitint = {
 
 //------------------------------------------------------------------------------------
 
+new Chart($grafica0, {
+    type: 'bar',// Tipo de gráfica
+    data: {
+        datasets: [
+            generoTot,
+            saludTot,
+            idiitTot,
+            // Aquí más datos...
+        ]
+    },
+    options: {
+        margin: 0,
+        responsive: true,
+        scales:{
+            yAxes: [{
+                ticks:{
+                    max: 50,
+                    beginAtZero: true
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontSize: 18
+                }
+            }]
+        },
+        legend: {
+            labels:{
+                fontSize: 18,
+                fontColor: 'Black'
+            }
+        }
+    }  
+});
+
 new Chart($grafica1, {
     type: 'radar',// Tipo de gráfica
     data: {
-        labels: etiquetas,
+        labels: comunidades,
         datasets: [
             genero,
             derechos,
@@ -118,18 +180,27 @@ new Chart($grafica1, {
         ]
     },
     options: {
+        scale: {
+            pointLabels:{
+                fontSize: 18,
+                fontColor: 'black'
+            }
+        },
         margin: 0,
         legend: {
             labels:{
-                fontColor: 'Black'
-            }}     
+                fontColor: 'Black',
+                fontSize: 25
+            },
+            
+        }     
     }      
 });
 
 new Chart($grafica2, {
     type: 'bar',// Tipo de gráfica
     data: {
-        labels: etiquetas,
+        labels: comunidades,
         datasets: [
             generon1,
             generon2,
@@ -157,7 +228,7 @@ new Chart($grafica2, {
 new Chart($grafica3, {
     type: 'bar',// Tipo de gráfica
     data: {
-        labels: etiquetas,
+        labels: comunidades,
         datasets: [
             saludn1,
             saludn2,
@@ -179,7 +250,7 @@ new Chart($grafica3, {
 new Chart($grafica4, {
     type: 'bar',// Tipo de gráfica
     data: {
-        labels: etiquetas,
+        labels: comunidades,
         datasets: [
             idiitn1,
             idiitn2,

@@ -151,3 +151,29 @@
         letter-spacing: 0.04em;
     }
 }
+
+.datalabel {
+    position: relative;
+    font-weight: 700;
+    
+    &_1{
+        position: absolute;
+        z-index: 10;
+        top: 530px;
+        left: 23%;
+    }
+
+    &_2{
+        position: absolute;
+        z-index: 10;
+        top: 180px;
+        left: 50%;
+    }
+
+    &_3{
+        position: absolute;
+        z-index: 10;
+        top: 278px;
+        left: 76%;
+    }
+}

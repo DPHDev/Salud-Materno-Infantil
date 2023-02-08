@@ -262,6 +262,29 @@
   letter-spacing: 0.04em;
 }
 
+.datalabel {
+  position: relative;
+  font-weight: 700;
+}
+.datalabel_1 {
+  position: absolute;
+  z-index: 10;
+  top: 530px;
+  left: 23%;
+}
+.datalabel_2 {
+  position: absolute;
+  z-index: 10;
+  top: 180px;
+  left: 50%;
+}
+.datalabel_3 {
+  position: absolute;
+  z-index: 10;
+  top: 278px;
+  left: 76%;
+}
+
 .componentes {
   width: 100%;
   display: flex;

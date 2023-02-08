@@ -45,7 +45,7 @@ const desventajasdata = {
 //------------------------------------------------------------------------------------
 
 new Chart($grafica5, {
-    type: 'radar',// Tipo de gráfica
+    type: 'horizontalBar',// Tipo de gráfica
     data: {
         labels: etiquetas2,
         datasets: [
@@ -56,10 +56,33 @@ new Chart($grafica5, {
     },
     options: {
         margin: 0,
+        responsive: true,
+        scales:{
+
+        // -----Opciones para gráfica tipo radar
+        //     pointLabels:{
+        //     fontSize: 18,
+        //     fontColor: 'black'
+        //     }     
+
+            yAxes: [{
+                ticks:{
+                    fontSize: 18
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                max: 6,
+                min: -5 
+                }
+            }]
+        },
         legend: {
             labels:{
+                fontSize: 18,
                 fontColor: 'Black'
-            }}     
+            }
+        }
     }      
 });
 
@@ -76,9 +99,14 @@ new Chart($grafica6, {
         margin: 0,
         responsive: true,
         scales:{
+            yAxes: [{
+                ticks:{
+                    fontSize: 16
+                }
+            }],
             xAxes: [{
                 ticks:{
-                    max: 11,
+                    max: 8,
                     beginAtZero: true
                 }
             }]
@@ -116,9 +144,14 @@ new Chart($grafica7, {
         margin: 0,
         responsive: true,
         scales:{
+            yAxes: [{
+                ticks:{
+                    fontSize: 16
+                }
+            }],
             xAxes: [{
                 ticks:{
-                    max: 11,
+                    max: 7,
                     beginAtZero: true
                 }
             }]

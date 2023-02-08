@@ -136,18 +136,25 @@ new Chart($grafica10, {
     },
     options: {
         scale: {
-        ticks: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-          }
+            pointLabels:{
+                fontSize: 18,
+                fontColor: 'black'
+            },
+            ticks: {
+                beginAtZero: true,
+                min: 0,
+                max: 100,
+            }
         },
         margin: 0,
         legend: {
             labels:{
-                fontColor: 'Black'
-            }}     
-    }      
+                fontColor: 'Black',
+                fontSize: 25
+            },
+            
+        }     
+    }   
 });
 
 new Chart($grafica11d, {
@@ -161,18 +168,25 @@ new Chart($grafica11d, {
     },
     options: {
         scale: {
+            pointLabels:{
+                fontSize: 18,
+                fontColor: 'black'
+            },
             ticks: {
                 beginAtZero: true,
                 min: 0,
                 max: 100,
-              }
-            },
+            }
+        },
         margin: 0,
         legend: {
             labels:{
-                fontColor: 'Black'
-            }}     
-    }      
+                fontColor: 'Black',
+                fontSize: 25
+            },
+            
+        }     
+    }        
 });
 
 new Chart($grafica11v, {
@@ -184,20 +198,27 @@ new Chart($grafica11v, {
             // Aquí más datos...
         ]
     },
-    options: {        
+    options: {
         scale: {
-        ticks: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-          }
+            pointLabels:{
+                fontSize: 18,
+                fontColor: 'black'
+            },
+            ticks: {
+                beginAtZero: true,
+                min: 0,
+                max: 100,
+            }
         },
         margin: 0,
         legend: {
             labels:{
-                fontColor: 'Black'
-            }}     
-    }      
+                fontColor: 'Black',
+                fontSize: 25
+            },
+            
+        }     
+    }         
 });
 
 new Chart($grafica11t, {
@@ -211,18 +232,25 @@ new Chart($grafica11t, {
     },
     options: {
         scale: {
+            pointLabels:{
+                fontSize: 18,
+                fontColor: 'black'
+            },
             ticks: {
                 beginAtZero: true,
                 min: 0,
                 max: 100,
-              }
-            },
+            }
+        },
         margin: 0,
         legend: {
             labels:{
-                fontColor: 'Black'
-            }}     
-    }      
+                fontColor: 'Black',
+                fontSize: 25
+            },
+            
+        }     
+    }         
 });
 
 new Chart($grafica12, {
@@ -236,16 +264,22 @@ new Chart($grafica12, {
     },
     options: {
         scale: {
+            pointLabels:{
+                fontSize: 18,
+                fontColor: 'black'
+            },
             ticks: {
                 beginAtZero: true,
                 min: 0,
                 max: 100,
-              }
-            },
+            }
+        },
         margin: 0,
         legend: {
             labels:{
-                fontColor: 'Black'
-            }}     
-    }      
+                fontColor: 'Black',
+                fontSize: 25
+            },
+        }     
+    }        
 });

@@ -9,7 +9,6 @@
   href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Titan+One&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
 </head>
 
 <body>
@@ -159,8 +158,19 @@
   </section>
 
   <section class="results">
+
     <div class="results_group">
-        <span class="section-tittle">Respuesta de cabildos ante las urgencias comunitarias</span>
+      <span class="section-tittle">Respuesta de cabildos ante las urgencias comunitarias</span>
+      <div class="results_grafica datalabel">
+      <canvas id="grafica0"></canvas>
+        <span class="datalabel_1">15</span>
+        <span class="datalabel_2">41</span>
+        <span class="datalabel_3">34</span>
+    </div>
+    </div>
+
+    <div class="results_group">
+        <span class="section-tittle">Respuesta de cabildos ante las urgencias comunitarias segredado por comunidades</span>
         <div class="results_grafica">
         <canvas id="grafica1"></canvas></div>
         <div class="results_info">
@@ -269,6 +279,8 @@
       </div>
     </div>
   </footer>
-<script src="./js/script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+  <script src="./js/script2.js"></script>
 </body>
 </html>
