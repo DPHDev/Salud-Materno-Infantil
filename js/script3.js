@@ -69,7 +69,7 @@ const ddhhdata = {
 // // Podemos tener varios conjuntos de datos
 const violenciadata = {
     label: "Violencia (en %)",
-    data: ["6.04",	"11.07", "10.40", "28.19"], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    data: ["10.07",	"11.07", "10.40", "28.19"], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
     backgroundColor: 'rgba(139, 67, 222, 0.5)',// Color de fondo
     borderColor: 'rgba(139, 67, 222, 1)',// Color del borde
     borderWidth: 1,// Ancho del borde
