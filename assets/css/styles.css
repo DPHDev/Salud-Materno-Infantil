@@ -36,7 +36,7 @@
 .navbar_list {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 50px;
 }
 .navbar_page {
   font-family: "Roboto";
@@ -68,7 +68,7 @@
     padding: 0 10px;
   }
   .navbar_list {
-    gap: 10px;
+    gap: 20px;
   }
 }
 .bg-pink {
