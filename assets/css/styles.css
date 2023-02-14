@@ -525,7 +525,6 @@
 
 .btn-ppal {
   width: 261px;
-  height: 65px;
   background-color: #D41443;
   font-family: "Roboto";
   font-style: normal;
@@ -539,6 +538,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
+  padding: 10px 24px;
 }
 .btn-ppal:hover {
   background-color: #FFFFFF;

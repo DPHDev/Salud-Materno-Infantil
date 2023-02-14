@@ -117,9 +117,8 @@
   
   .btn-ppal {
     width: 261px;
-    height: 65px;
     background-color: getColor('titles');
-  
+    
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -133,6 +132,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
+    padding: 10px 24px;
 
     &:hover {
       background-color: getColor('white');
