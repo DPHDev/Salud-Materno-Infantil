@@ -42,7 +42,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 76px;
   letter-spacing: 0.02em;
   color: #212121;
@@ -69,6 +69,9 @@
   }
   .navbar_list {
     gap: 20px;
+  }
+  .navbar_page {
+    font-size: 13px;
   }
 }
 .bg-pink {
@@ -432,9 +435,11 @@
   width: 100%;
   height: 100%;
   z-index: 5;
+  padding-top: 90px;
 }
 
 .modal {
+  width: 70%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -461,6 +466,9 @@
   /* identical to box height */
   letter-spacing: 0.04em;
   list-style: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .is-hidden {
@@ -517,7 +525,7 @@
 
 .btn-ppal {
   width: 261px;
-  height: 50px;
+  height: 65px;
   background-color: #D41443;
   font-family: "Roboto";
   font-style: normal;
@@ -684,6 +692,26 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 1300px) {
+  .text-ppal {
+    width: 60%;
+  }
+  .metodos {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .text-ppal {
+    width: 75%;
+  }
+  .metodos_card {
+    width: 300px;
+    height: 200px;
+  }
+  .modal {
+    width: 80%;
+  }
+}
 .enfoques {
   width: 80%;
   margin: 0 auto;

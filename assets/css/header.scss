@@ -36,7 +36,7 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 76px;
         letter-spacing: 0.02em;
         color: #212121;
@@ -62,12 +62,18 @@
 
 @media screen and (max-width: 1300px) {
 
-    .header {
-        padding: 0 10px;
-    }
-    
-    .navbar_list {
+.header {
+    padding: 0 10px;
+}   
+
+.navbar {
+    &_list {
         gap: 20px;
+    }
+
+    &_page {
+        font-size: 13px;
     }
 }
 
+}
