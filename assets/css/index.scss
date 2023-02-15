@@ -361,6 +361,10 @@
       width: 400px;
     }
 
+    &_galery {
+      margin: 0 auto;
+    }
+
     &_card {
           width: 400px;
           height: 300px;
@@ -433,6 +437,22 @@
   height: 85px;
 }
 
+//Sección métodos
+.metodos {
+  &_img {
+    width: 400px;
+  }
+
+  &_galery {
+    margin: 0 auto;
+  }
+
+  &_card {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
 
 //Sección glosario
 

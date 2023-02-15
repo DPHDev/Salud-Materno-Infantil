@@ -853,6 +853,9 @@
   .metodos_img {
     width: 400px;
   }
+  .metodos_galery {
+    margin: 0 auto;
+  }
   .metodos_card {
     width: 400px;
     height: 300px;
@@ -898,6 +901,17 @@
   .act-icon {
     width: 85px;
     height: 85px;
+  }
+  .metodos_img {
+    width: 400px;
+  }
+  .metodos_galery {
+    margin: 0 auto;
+  }
+  .metodos_card {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
   }
   .glosario {
     padding: 50px 5%;
