@@ -219,7 +219,7 @@
 }
 
 .expertos {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -266,6 +266,44 @@
   letter-spacing: 0.04em;
 }
 
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  .delphis {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+  .delphis_info {
+    width: 90%;
+  }
+  .delphis_text {
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
+  .expertos {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .expertos_subtitle {
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    color: #ae455e;
+  }
+  .expertos_text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
+}
 .bg-pink {
   background-color: #fbe8ed;
 }
@@ -428,6 +466,63 @@
   left: 76%;
 }
 
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  .cabildos {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 50px 10px;
+    gap: 40px;
+    margin: 0 auto;
+  }
+  .cabildos_title {
+    width: 95%;
+  }
+  .cabildos_info {
+    width: 95%;
+  }
+  .cabildos_text {
+    text-align: justify;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
+  }
+  .demograf {
+    width: 90%;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .demograf_title {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+  }
+  .demograf_table {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .demograf_tbl {
+    background-color: #FFFFFF;
+    width: 90%;
+    border: 1px solid #D41443;
+    margin: 0 auto;
+  }
+  .demograf_text {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
+}
 .componentes {
   width: 100%;
   display: flex;
@@ -562,6 +657,21 @@
   width: 50%;
 }
 
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  .content {
+    width: 100%;
+  }
+  .componentes_objetivos {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .componentes_descripcion {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0px;
+  }
+}
 .backdrop {
   position: fixed;
   display: flex;
@@ -992,6 +1102,27 @@
   letter-spacing: 0.04em;
 }
 
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  .enfoques {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .enfoques_text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+  .enfoques_tbl {
+    margin-left: -20px;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0;
+  }
+}
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -1224,9 +1355,32 @@ tr:hover {
 }
 
 @media screen and (max-width: 720px) and (min-width: 320px) {
+  .info {
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
+  .main-tittle {
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+  }
   .section-tittle {
     font-size: 28px;
     line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+  .section-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  .results_text {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
     letter-spacing: 0.02em;
   }
   .footer {

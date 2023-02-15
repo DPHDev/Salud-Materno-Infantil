@@ -247,10 +247,40 @@ tr {
 
 @media screen and (max-width: 720px) and (min-width: 320px) {
 
+.info {
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+}
+
+.main-tittle {
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 0.04em;
+}
+
 .section-tittle {
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.02em;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.results {
+
+  &_text {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer {

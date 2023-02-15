@@ -177,3 +177,70 @@
         left: 76%;
     }
 }
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+
+.cabildos {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 50px 10px;
+    gap: 40px;
+    margin: 0 auto;
+
+    &_title {
+        width: 95%;
+    }
+
+    &_info {
+        width: 95%;
+    }
+
+    &_text {
+        text-align: justify;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+} 
+
+.demograf {
+    width: 90%;
+    flex-direction: column;
+    gap: 40px;
+    
+    &_title {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+    &_table {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    &_tbl {
+        background-color: getColor('white');
+        width: 90%;
+        border: 1px solid getColor('titles');
+        margin: 0 auto;
+    }
+
+    &_text {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        letter-spacing: 0.02em;
+    }
+}
+}
