@@ -17,6 +17,10 @@
     }   
 }
 
+.menu {
+    display: none;
+}
+
 .logo {
   height: 60px;
   max-width: 200px;
@@ -80,14 +84,150 @@
 @media screen and (max-width: 1150px) and (min-width: 721px) {
 
 .header {
-    display: none;
+    padding: 0 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid getColor('titles');
+    padding: 5px;
+    border-radius: 45px;
+    fill: getColor('titles');
+
+    &:active {
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        background-color: getColor("titles");
+        fill: getColor("white");
+        scale: 1.1;
+    }
+
+    &_icon {   
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.logo {
+        max-width: 180px;
+}
+
+.navbar {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+
+    &.mobile-menu {
+        margin-left: 0;
+    }
+
+    &_list {
+        gap: 50px;
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_page {
+        font-size: 1.5em;
+        color: getColor('black');
+        font-weight: 700;
+        line-height: 15px;
+    }
+
+    .current {
+        color: getColor('titles');
+    }
 }
 }
 
-@media screen and (max-width: 720px) and (min-width: 320px) {
+@media screen and (max-width: 720px) and (min-width: 450px) {
 
 .header {
-        display: none;
+        padding: 0 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid getColor('titles');
+    padding: 5px;
+    border-radius: 45px;
+    fill: getColor('titles');
+    position: absolute;
+    left: calc(50% - 30px);
+
+    &:active {
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        background-color: getColor("titles");
+        fill: getColor("white");
+        scale: 1.1;
+    }
+
+    &_icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.logo {
+    height: 50px;
+    max-width: 150px;
+}
+
+.navbar {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+    
+    &.mobile-menu {
+            margin-left: 0;
+    }
+
+    &_list {
+        gap: 50px;
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &_page {
+        font-size: 1.5em;
+        color: getColor('black');
+        font-weight: 700;
+        line-height: 15px;
+    }
+    .current {
+        color: getColor('titles');
+    }
 }
 
 }
