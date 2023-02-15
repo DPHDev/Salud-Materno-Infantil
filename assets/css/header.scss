@@ -158,8 +158,7 @@
 @media screen and (max-width: 720px) and (min-width: 320px) {
 
 .header {
-    padding: 0 5px;
-    gap: 5px;
+    padding: 0 20px;
 
     &_logos {
         gap: 5px;
@@ -201,19 +200,21 @@
 }
 
 .navbar {
+    width: 100%;
+    height: 100vh;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(15px);
-    width: 100%;
     height: calc(100vh - 80px);
     top: 80px;
-    left: 0;
+    left: 0px;
     justify-content: center;
     align-items: center;
     margin-left: -100%;
     transition: all 0.5s ease;
     
     &.mobile-menu {
+        width: 100%;
         margin-left: 0;
     }
 
