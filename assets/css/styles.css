@@ -141,16 +141,20 @@
     color: #D41443;
   }
 }
-@media screen and (max-width: 720px) and (min-width: 450px) {
+@media screen and (max-width: 720px) and (min-width: 320px) {
   .header {
-    padding: 0 10px;
+    padding: 0 5px;
+    gap: 5px;
+  }
+  .header_logos {
+    gap: 5px;
   }
   .menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #D41443;
     padding: 5px;
     border-radius: 45px;
@@ -172,8 +176,8 @@
     height: 40px;
   }
   .logo {
-    height: 50px;
-    max-width: 150px;
+    height: 40px;
+    max-width: 100px;
   }
   .navbar {
     position: absolute;
@@ -196,6 +200,9 @@
     width: 70%;
     flex-direction: column;
     align-items: center;
+  }
+  .navbar_item {
+    text-align: center;
   }
   .navbar_page {
     font-size: 1.5em;
@@ -1001,6 +1008,7 @@
 }
 .galeria_img:hover {
   transform: scale(1.1);
+  transition: all 0.5s ease;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 

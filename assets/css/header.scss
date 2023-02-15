@@ -155,18 +155,23 @@
 }
 }
 
-@media screen and (max-width: 720px) and (min-width: 450px) {
+@media screen and (max-width: 720px) and (min-width: 320px) {
 
 .header {
-        padding: 0 10px;
+    padding: 0 5px;
+    gap: 5px;
+
+    &_logos {
+        gap: 5px;
+    }
 }
 
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border: 1px solid getColor('titles');
     padding: 5px;
     border-radius: 45px;
@@ -191,8 +196,8 @@
 }
 
 .logo {
-    height: 50px;
-    max-width: 150px;
+    height: 40px;
+    max-width: 100px;
 }
 
 .navbar {
@@ -209,7 +214,7 @@
     transition: all 0.5s ease;
     
     &.mobile-menu {
-            margin-left: 0;
+        margin-left: 0;
     }
 
     &_list {
@@ -218,7 +223,11 @@
         flex-direction: column;
         align-items: center;
     }
-    
+
+    &_item {
+        text-align: center;
+    }
+
     &_page {
         font-size: 1.5em;
         color: getColor('black');
