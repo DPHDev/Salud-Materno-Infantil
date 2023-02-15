@@ -24,6 +24,7 @@
   gap: 12px;
   margin: auto;
   padding: 40px;
+  overflow-y: scroll;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -90,7 +91,8 @@
         rgba(12, 12, 12, 0.622)
       ),
       url(../img/bannerdiag.jpg);
-  
+    background-position: center;
+    background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
     margin-top: 3px;
     color: getColor('white');
@@ -164,6 +166,7 @@
 .actores {
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 50px;
     gap: 30px;
@@ -172,7 +175,7 @@
     margin-bottom: 100px;
   
   &_item {
-    width: 270px;
+    width: 22%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -314,32 +317,138 @@
 
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) and (min-width: 1151px){
 
+//Sección Hero
 .text-ppal {
       width: 60%;
 }
 
+//Sección métodos
 .metodos {
   gap: 20px;
 }
 
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1150px) and (min-width: 721px) {
 
+//Sección Hero
 .text-ppal {
     width: 75%;
+    font-size: 34px;
+    letter-spacing: 0.03em;
   }
 
-  .metodos {
+// Sección actores
+
+.actores {
+
+  &_item {
+    width: 40%;
+  }
+
+}
+
+.act-icon {
+  width: 85px;
+  height: 85px;
+}
+
+//Sección métodos
+.metodos {
+    &_img {
+      width: 400px;
+    }
 
     &_card {
-          width: 300px;
-          height: 200px;
+          width: 400px;
+          height: 300px;
+          margin: 0 auto;
   }
 }
 
+//Sección glosario
+
+.glosario {
+  &_list {
+    padding: 20px;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
+}
+
+//modal
+.modal {
+  width: 80%;
+}
+
+}
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+
+
+
+//Sección Hero
+.banner-ppal{
+  height: 350px;
+}
+
+.text-ppal {
+  width: 75%;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+
+//Sección propósito
+.proposito {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10%;
+  margin-bottom: 50px;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+  &_img {
+    width: 80%;
+    border-radius: 250px;
+  }
+}
+
+// Sección actores
+
+.actores {
+
+  &_item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
+.act-icon {
+  width: 85px;
+  height: 85px;
+}
+
+
+//Sección glosario
+
+.glosario {
+  padding: 50px 5%;
+
+  &_list {
+    padding: 15px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+}
+
+//modal
 .modal {
   width: 80%;
 }

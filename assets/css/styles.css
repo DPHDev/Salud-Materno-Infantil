@@ -63,7 +63,7 @@
   border-radius: 2px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) and (min-width: 1151px) {
   .header {
     padding: 0 10px;
   }
@@ -72,6 +72,16 @@
   }
   .navbar_page {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 1150px) and (min-width: 721px) {
+  .header {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  .header {
+    display: none;
   }
 }
 .bg-pink {
@@ -446,6 +456,7 @@
   gap: 12px;
   margin: auto;
   padding: 40px;
+  overflow-y: scroll;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -501,6 +512,8 @@
   flex-direction: column;
   height: 600px;
   background-image: linear-gradient(rgba(14, 13, 13, 0.622), rgba(12, 12, 12, 0.622)), url(../img/bannerdiag.jpg);
+  background-position: center;
+  background-size: cover;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
   margin-top: 3px;
   color: #FFFFFF;
@@ -562,6 +575,7 @@
 .actores {
   width: 70%;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 50px;
   gap: 30px;
@@ -570,7 +584,7 @@
   margin-bottom: 100px;
 }
 .actores_item {
-  width: 270px;
+  width: 22%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -692,7 +706,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) and (min-width: 1151px) {
   .text-ppal {
     width: 60%;
   }
@@ -700,13 +714,76 @@
     gap: 20px;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1150px) and (min-width: 721px) {
   .text-ppal {
     width: 75%;
+    font-size: 34px;
+    letter-spacing: 0.03em;
+  }
+  .actores_item {
+    width: 40%;
+  }
+  .act-icon {
+    width: 85px;
+    height: 85px;
+  }
+  .metodos_img {
+    width: 400px;
   }
   .metodos_card {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .glosario_list {
+    padding: 20px;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
+  .modal {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  .banner-ppal {
+    height: 350px;
+  }
+  .text-ppal {
+    width: 75%;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+  }
+  .proposito {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10%;
+    margin-bottom: 50px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .proposito_img {
+    width: 80%;
+    border-radius: 250px;
+  }
+  .actores_item {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .act-icon {
+    width: 85px;
+    height: 85px;
+  }
+  .glosario {
+    padding: 50px 5%;
+  }
+  .glosario_list {
+    padding: 15px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
   }
   .modal {
     width: 80%;
@@ -985,6 +1062,17 @@ tr:hover {
 }
 .footer-icon:hover {
   fill: #D41443;
+}
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  .section-tittle {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
