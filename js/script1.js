@@ -84,11 +84,11 @@ new Chart($grafica5, {
         //     fontColor: 'black'
         //     }     
 
-            yAxes: [{
-                ticks:{
-                    fontSize: 18
-                }
-            }],
+            // yAxes: [{
+            //     ticks:{
+            //         fontSize: 18
+            //     }
+            // }],
             xAxes: [{
                 ticks: {
                 max: 6,
@@ -96,12 +96,12 @@ new Chart($grafica5, {
                 }
             }]
         },
-        legend: {
-            labels:{
-                fontSize: 18,
-                fontColor: 'Black'
-            }
-        }
+        // legend: {
+        //     labels:{
+        //         fontSize: 18,
+        //         fontColor: 'Black'
+        //     }
+        // }
     }      
 });
 
@@ -118,11 +118,11 @@ new Chart($grafica6, {
         margin: 0,
         responsive: true,
         scales:{
-            yAxes: [{
-                ticks:{
-                    fontSize: 15  
-                }
-            }],
+            // yAxes: [{
+            //     ticks:{
+            //         fontSize: 15  
+            //     }
+            // }],
             xAxes: [{
                 ticks:{
                     max: 8,
@@ -135,17 +135,17 @@ new Chart($grafica6, {
             labels:{
                 fontColor: 'Black'
         }},
-        plugins: {
-            legend: {
-                labels: {
-                    // This more specific font property overrides the global property
-                    font: {
-                        size: 25,
-                        weight: 700
-                    }
-                }
-            }
-        }
+        // plugins: {
+        //     legend: {
+        //         labels: {
+        //             // This more specific font property overrides the global property
+        //             font: {
+        //                 size: 25,
+        //                 weight: 700
+        //             }
+        //         }
+        //     }
+        // }
 
     }      
 });
@@ -163,11 +163,11 @@ new Chart($grafica7, {
         margin: 0,
         responsive: true,
         scales:{
-            yAxes: [{
-                ticks:{
-                    fontSize: 15
-                }
-            }],
+            // yAxes: [{
+            //     ticks:{
+            //         fontSize: 15
+            //     }
+            // }],
             xAxes: [{
                 ticks:{
                     max: 7,
@@ -195,10 +195,10 @@ new Chart($grafica8, {
     },
     options: {
         scale: {
-            pointLabels:{
-                fontSize: 18,
-                fontColor: 'black'
-            },
+            // pointLabels:{
+            //     fontSize: 18,
+            //     fontColor: 'black'
+            // },
             ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -206,12 +206,11 @@ new Chart($grafica8, {
             }
         },
         margin: 0,
-        legend: {
-            labels:{
-                fontColor: 'Black',
-                fontSize: 25
-            },
-            
-        }     
+        // legend: {
+        //     labels:{
+        //         fontColor: 'Black',
+        //         fontSize: 25
+        //     },  
+        // }     
     }       
 });

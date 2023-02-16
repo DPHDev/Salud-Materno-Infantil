@@ -159,12 +159,12 @@ new Chart($grafica0, {
                 }
             }]
         },
-        legend: {
-            labels:{
-                fontSize: 18,
-                fontColor: 'Black'
-            }
-        }
+        // legend: {
+        //     labels:{
+        //         fontSize: 18,
+        //         fontColor: 'Black'
+        //     }
+        // }
     }  
 });
 
@@ -180,20 +180,20 @@ new Chart($grafica1, {
         ]
     },
     options: {
-        scale: {
-            pointLabels:{
-                fontSize: 18,
-                fontColor: 'black'
-            }
-        },
+        // scale: {
+        //     pointLabels:{
+        //         fontSize: 18,
+        //         fontColor: 'black'
+        //     }
+        // },
         margin: 0,
-        legend: {
-            labels:{
-                fontColor: 'Black',
-                fontSize: 25
-            },
+        // legend: {
+        //     labels:{
+        //         fontColor: 'Black',
+        //         fontSize: 25
+        //     },
             
-        }     
+        // }     
     }      
 });
 

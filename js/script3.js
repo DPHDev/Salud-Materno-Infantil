@@ -136,10 +136,10 @@ new Chart($grafica10, {
     },
     options: {
         scale: {
-            pointLabels:{
-                fontSize: 18,
-                fontColor: 'black'
-            },
+            // pointLabels:{
+            //     fontSize: 18,
+            //     fontColor: 'black'
+            // },
             ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -147,13 +147,13 @@ new Chart($grafica10, {
             }
         },
         margin: 0,
-        legend: {
-            labels:{
-                fontColor: 'Black',
-                fontSize: 25
-            },
+        // legend: {
+        //     labels:{
+        //         fontColor: 'Black',
+        //         fontSize: 25
+        //     },
             
-        }     
+        // }     
     }   
 });
 
@@ -168,10 +168,10 @@ new Chart($grafica11d, {
     },
     options: {
         scale: {
-            pointLabels:{
-                fontSize: 18,
-                fontColor: 'black'
-            },
+            // pointLabels:{
+            //     fontSize: 18,
+            //     fontColor: 'black'
+            // },
             ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -179,13 +179,13 @@ new Chart($grafica11d, {
             }
         },
         margin: 0,
-        legend: {
-            labels:{
-                fontColor: 'Black',
-                fontSize: 25
-            },
+        // legend: {
+        //     labels:{
+        //         fontColor: 'Black',
+        //         fontSize: 25
+        //     },
             
-        }     
+        // }     
     }        
 });
 
@@ -200,10 +200,10 @@ new Chart($grafica11v, {
     },
     options: {
         scale: {
-            pointLabels:{
-                fontSize: 18,
-                fontColor: 'black'
-            },
+            // pointLabels:{
+            //     fontSize: 18,
+            //     fontColor: 'black'
+            // },
             ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -211,13 +211,13 @@ new Chart($grafica11v, {
             }
         },
         margin: 0,
-        legend: {
-            labels:{
-                fontColor: 'Black',
-                fontSize: 25
-            },
+        // legend: {
+        //     labels:{
+        //         fontColor: 'Black',
+        //         fontSize: 25
+        //     },
             
-        }     
+        // }     
     }         
 });
 
@@ -232,10 +232,10 @@ new Chart($grafica11t, {
     },
     options: {
         scale: {
-            pointLabels:{
-                fontSize: 18,
-                fontColor: 'black'
-            },
+            // pointLabels:{
+            //     fontSize: 18,
+            //     fontColor: 'black'
+            // },
             ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -243,13 +243,13 @@ new Chart($grafica11t, {
             }
         },
         margin: 0,
-        legend: {
-            labels:{
-                fontColor: 'Black',
-                fontSize: 25
-            },
+        // legend: {
+        //     labels:{
+        //         fontColor: 'Black',
+        //         fontSize: 25
+        //     },
             
-        }     
+        // }     
     }         
 });
 
@@ -264,10 +264,10 @@ new Chart($grafica12, {
     },
     options: {
         scale: {
-            pointLabels:{
-                fontSize: 18,
-                fontColor: 'black'
-            },
+            // pointLabels:{
+            //     fontSize: 18,
+            //     fontColor: 'black'
+            // },
             ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -275,11 +275,11 @@ new Chart($grafica12, {
             }
         },
         margin: 0,
-        legend: {
-            labels:{
-                fontColor: 'Black',
-                fontSize: 25
-            },
-        }     
+        // legend: {
+        //     labels:{
+        //         fontColor: 'Black',
+        //         fontSize: 25
+        //     },
+        // }     
     }        
 });
